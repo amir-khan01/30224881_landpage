@@ -1,0 +1,158 @@
+#logo-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-bottom: 10px;
+}
+
+#logo {
+    max-width: 80px; 
+    height: auto;
+}
+
+body {
+    background-color: lightblue; 
+}
+
+.hero-section {
+    background-color:lightcyan;
+    color: #333;
+    align-items: center;
+    background-image: url(images/background-medium.jpg);
+    background-repeat: none;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.features-section {
+    background-color: rgba(0, 0, 0, 0.571);
+    color: whitesmoke;
+    background-image: url(images/flourish.png);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px; 
+    padding: 60px;
+    flex-direction: column;
+}
+
+.about-section{
+    color:  rgb(0, 54, 72);;
+}
+
+
+.button{
+    background: linear-gradient(to right, grey, black); 
+    color: white; 
+    padding: 12px 24px; 
+    font-size: 18px; 
+    border: none; 
+    border-radius: 25px; 
+    cursor: pointer; 
+}
+
+.button:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05);
+}
+
+
+.cta-section {
+    background-color: rgb(0, 54, 72);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+    
+}
+
+h2::first-letter {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+a:link {
+    color: #FF0000;
+}
+   
+a:visited {
+    color: #0022ff;
+}
+
+
+/*small tablets or phones*/
+@media (max-width: 767px) {
+    .hero-section {
+        flex-direction: column; 
+        gap: 20px; 
+        font-size: 15px;
+        background-image: url(images/background-small.jpg);
+
+    }
+
+    .features-section {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 10px;
+    }
+
+    .cta-section {
+        gap: 10px; 
+        font-size: 15px;
+    }
+
+    .button {
+        font-size: 14px; 
+        padding: 10px 20px; 
+    }
+
+    h2::first-letter {
+        font-size: 30px; 
+    }
+
+    
+}
+
+/*small devices like mobile phones*/
+@media (max-width: 480px) {
+    .hero-section {
+        gap: 10px; 
+        flex-direction: column;
+        font-size: 15px;
+        background-image: url(images/background-extra-small.jpg);
+    }
+
+    .features-section {
+        padding: 10px; 
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 10px;
+    }
+
+    .cta-section {
+        flex-direction: column; 
+        gap: 10px; 
+        font-size: 15px;
+    }
+
+    .button {
+        font-size: 12px; 
+        padding: 8px 16px; 
+    }
+
+    h2::first-letter {
+        font-size: 25px; 
+    }
+
+}
+
+
+
+
